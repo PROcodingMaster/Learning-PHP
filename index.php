@@ -6,11 +6,12 @@
     <title><?php echo "THIS IS T3-Function, Array and Strings."; ?></title>
 </head>
 <body>
-<h1>Associative Arrays</h1>
+<h1>2 dimentional Arrays</h1>
     <?php
-        // Print array.
-        $num = array("1st_number" => 34 ,"2nd_number" => 56); // Declare an Associative array
+        $num = array(array(78,12), array(3, 4)); // Declare 2 dimentional Arrays
         print_r($num);
+        $sum = $num[0][1]+ $num[1][1];
+        echo "<br>Sum of (0,1) and (1,1) is " . $sum . ".";
         
     ?>
 </body>
