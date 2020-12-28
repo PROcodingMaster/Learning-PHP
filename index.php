@@ -6,13 +6,10 @@
     <title><?php echo "THIS IS T3-Function, Array and Strings."; ?></title>
 </head>
 <body>
-<h1>DIFFERENCE B/W SINGLE('') AND DOUBLE("") QUOTES</h1>
+<h1>Length of String</h1>
     <?php
-        $var = "Aneesh";
-        echo 'Hello my name is Aneesh';  // Single quote
-        echo '<br>Hello my name is $var'; // Single quote with variable
-        echo "<br>Hello my name is $var";   // Double quote with variable
-        echo "<br>Hello my name is '$var'"; // Double quote with variable in single quote
+        $var2 = " I am a true GEEK";
+        echo "<br>Length of String  ' I am a true GEEK ' (with white spaces) is " . strlen($var2);
         
     ?>
 </body>
