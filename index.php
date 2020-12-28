@@ -6,11 +6,12 @@
     <title><?php echo "T4-LOOPS."; ?></title>
 </head>
 <body>
-<h1>For Loop</h1>
+<h1>Foreach Loop</h1>
     <?php
-    
-        for($count = 0; $count <= 5; $count++){
-            echo "$count" . "<br>";
+        //Used to Loop through Arrays.
+        $marks = array(1,2,4,5,6,9,0,6,3,88);
+        foreach($marks as $mark){
+            echo "Value :"  . $mark . "<br>";
         }
     ?>
 </body>
