@@ -5,7 +5,8 @@ function sum($para1, $para2 = 0)
 {   
     // Defalut value of parameter is NULL.
     $addition = $para1 +$para2;
-    return $addition;
+    echo " The sum of 2 variables is : " . $addition . ".";
+    return ;
 }
 ?>
 
@@ -22,8 +23,7 @@ function sum($para1, $para2 = 0)
         // Function is an independent code that performs a particular task.
         $var1 = 44;
         $var2 = 67;
-        $sum = sum($var1);
-        echo "The sum from the function is :" . $sum; 
+        sum($var1); 
         
     ?>
 </body>
