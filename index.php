@@ -7,9 +7,10 @@
     <title>Document</title>
 </head>
 <body>
+<h1>This is Heading 1.</h1>
     <?php
         // This is a single line comment
-        echo " Echo statement output"
+        echo " <h2>Echo statement output</h2>"
         /* Multiline comment 
         Yes, This is a comment too*/
     ?>
