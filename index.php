@@ -10,6 +10,10 @@
 <h1>THIS IS T2-BASICS.</h1>
     <?php
         echo  18 + 12;
+        $Valid_variable_1 = 34;
+        $_valid_variable_2 = 56;
+        echo "<br>Data type of Variable 1: " ,gettype($Valid_variable_1);
+
         
     ?>
 </body>
