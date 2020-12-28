@@ -6,12 +6,11 @@
     <title><?php echo "T4-LOOPS."; ?></title>
 </head>
 <body>
-<h1>While Loop</h1>
+<h1>For Loop</h1>
     <?php
-        $counter = 1;
-        while($counter <= 5){
-            echo "$counter" . "<br>";
-            $counter++;
+    
+        for($count = 0; $count <= 5; $count++){
+            echo "$count" . "<br>";
         }
     ?>
 </body>
