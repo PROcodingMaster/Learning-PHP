@@ -1,8 +1,9 @@
 
 <?php 
 // Making a function at the top of the document.
-function sum($para1, $para2)
-{
+function sum($para1, $para2 = 0)
+{   
+    // Defalut value of parameter is NULL.
     $addition = $para1 +$para2;
     return $addition;
 }
@@ -21,7 +22,7 @@ function sum($para1, $para2)
         // Function is an independent code that performs a particular task.
         $var1 = 44;
         $var2 = 67;
-        $sum = sum($var1, $var2);
+        $sum = sum($var1);
         echo "The sum from the function is :" . $sum; 
         
     ?>
