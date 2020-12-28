@@ -30,6 +30,14 @@
         echo $row["id"] . "<br>";
         echo $row["email_id"] . "<br>";
         echo $row["first_name"] . "<br>";
+
+        for($count = 1; $count <= 10; $count++){
+        $row = mysqli_fetch_array($select_query_result); // This function has inbuilt counter that updates itself each time its called.
+        echo $row["id"] . "<br>";
+        echo $row["email_id"] . "<br>";
+        echo $row["first_name"] . "<br>";
+        echo "-------------------------------------------------------------<br>";
+        }
     ?>
 </body>
 </html>
