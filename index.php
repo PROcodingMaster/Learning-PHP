@@ -13,7 +13,8 @@
         $Valid_variable_1 = 34;
         $_valid_variable_2 = 56;
         echo "<br>Data type of Variable 1: " ,gettype($Valid_variable_1);
-
+        $sum = $Valid_variable_1 + $_valid_variable_2;
+        echo "<br>Sum :", $sum;
         
     ?>
 </body>
