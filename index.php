@@ -1,19 +1,28 @@
 
+<?php 
+// Making a function at the top of the document.
+function sum($para1, $para2)
+{
+    $addition = $para1 +$para2;
+    return $addition;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo "Variables, Datatypes and Operators"; ?></title>
+    <title><?php echo "Function, Array and Strings"; ?></title>
 </head>
 <body>
-<h1>THIS IS T2-BASICS.</h1>
+<h1>THIS IS T3-Function, Array and Strings.</h1>
     <?php
-        echo  18 + 12;
-        $Valid_variable_1 = 34;
-        $_valid_variable_2 = 56;
-        echo "<br>Data type of Variable 1: " ,gettype($Valid_variable_1);
-        echo "<br>The value of 1st variable is " . $Valid_variable_1;
+        // Function is an independent code that performs a particular task.
+        $var1 = 44;
+        $var2 = 67;
+        $sum = sum($var1, $var2);
+        echo "The sum from the function is :" . $sum; 
         
     ?>
 </body>
