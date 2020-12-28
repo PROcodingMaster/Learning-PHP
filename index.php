@@ -6,12 +6,13 @@
     <title><?php echo "THIS IS T3-Function, Array and Strings."; ?></title>
 </head>
 <body>
-<h1>2 dimentional Arrays</h1>
+<h1>DIFFERENCE B/W SINGLE('') AND DOUBLE("") QUOTES</h1>
     <?php
-        $num = array(array(78,12), array(3, 4)); // Declare 2 dimentional Arrays
-        print_r($num);
-        $sum = $num[0][1]+ $num[1][1];
-        echo "<br>Sum of (0,1) and (1,1) is " . $sum . ".";
+        $var = "Aneesh";
+        echo 'Hello my name is Aneesh';  // Single quote
+        echo '<br>Hello my name is $var'; // Single quote with variable
+        echo "<br>Hello my name is $var";   // Double quote with variable
+        echo "<br>Hello my name is '$var'"; // Double quote with variable in single quote
         
     ?>
 </body>
