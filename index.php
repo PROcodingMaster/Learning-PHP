@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo "T6 - SELECT QUERRY WITH PHP."; ?></title>
+    <title><?php echo "T7 - SELECT QUERRY WITH PHP part 2."; ?></title>
 </head>
 <body>
-<h1>Connect Database to webpage in PHP</h1>
+<h1>Display DB data</h1>
     <?php
         //Connect DB
         $con = mysqli_connect("localhost", "root", "", "ecommerce") or die(mysqli_error($con));
@@ -14,30 +14,29 @@
         $select_query = "SELECT id, email_id, first_name FROM users";
         //Use the querry and store the result in anothet variable.
         $select_query_result = mysqli_query($con, $select_query) or die(mysqli_error($con));
-        //Function to count the number of rows fetched.
-        $total_rows_fetched = mysqli_num_rows($select_query_result);
-        //Print the number of rows fetched.
-        echo "Rows fetched : ". $total_rows_fetched;
-
-        echo '<br><br> $row will have First row of DB.<br>';
-        $row = mysqli_fetch_array($select_query_result); // This function has inbuilt counter that updates itself each time its called.
-        echo $row["id"] . "<br>";
-        echo $row["email_id"] . "<br>";
-        echo $row["first_name"] . "<br>";
-
-        echo '<br>$row will now have 2nd row of DB.<br>';
-        $row = mysqli_fetch_array($select_query_result); // This function has inbuilt counter that updates itself each time its called.
-        echo $row["id"] . "<br>";
-        echo $row["email_id"] . "<br>";
-        echo $row["first_name"] . "<br>";
-
-        for($count = 1; $count <= 10; $count++){
-        $row = mysqli_fetch_array($select_query_result); // This function has inbuilt counter that updates itself each time its called.
-        echo $row["id"] . "<br>";
-        echo $row["email_id"] . "<br>";
-        echo $row["first_name"] . "<br>";
-        echo "-------------------------------------------------------------<br>";
-        }
+        
     ?>
+    <div class="container">
+        <?php while($row = mysqli_fetch_array($select_query_result)) { ?>
+            <div class="row">
+                <div class="col-lg-12">User</div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-2">ID</div>
+                <div class="col-xs-10"><?php echo $row["id"]; ?></div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-2">EMAIL</div>
+                <div class="col-xs-10"><?php echo $row["email_id"]; ?></div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-2">First Name</div>
+                <div class="col-xs-10"><?php echo $row["first_name"]; ?></div>
+            </div>
+        <?php } ?>
+    </div>
 </body>
 </html>
