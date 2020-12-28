@@ -13,7 +13,7 @@
         $Valid_variable_1 = 34;
         $_valid_variable_2 = 56;
         echo "<br>Data type of Variable 1: " ,gettype($Valid_variable_1);
-        echo "The value of 1st variable is " . $Valid_variable_1;
+        echo "<br>The value of 1st variable is " . $Valid_variable_1;
         
     ?>
 </body>
