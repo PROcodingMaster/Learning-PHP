@@ -13,7 +13,8 @@
         $num = array(34 , 56); // Declare an array
         $sum = $num[0] + $num[1];
         echo "The sum is " . $sum;
-        
+        // Length of an Array
+        echo "<br>Length of Array is : ". sizeof($num);
         
     ?>
 </body>
