@@ -23,7 +23,7 @@ function sum($para1, $para2 = 0)
         // Function is an independent code that performs a particular task.
         $var1 = 44;
         $var2 = 67;
-        sum($var1); 
+        sum($var1, $var2); 
         
     ?>
 </body>
