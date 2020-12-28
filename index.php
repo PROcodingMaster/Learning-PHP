@@ -8,12 +8,9 @@
 <body>
 <h1>Associative Arrays</h1>
     <?php
-        // In Associative Array we can change the index of the array too.
+        // Print array.
         $num = array("1st_number" => 34 ,"2nd_number" => 56); // Declare an Associative array
-        $sum = $num["1st_number"] + $num["2nd_number"]; // Using Strings instead of 0 and 1.
-        echo "The sum is " . $sum;
-        // Length of an Array
-        echo "<br>Length of Array is : ". count($num);
+        print_r($num);
         
     ?>
 </body>
