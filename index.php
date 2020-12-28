@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo "THIS IS T3-Function, Array and Strings."; ?></title>
+    <title><?php echo "T4-LOOPS."; ?></title>
 </head>
 <body>
-<h1>Length of String</h1>
+<h1>T4 Loops</h1>
     <?php
-        $var2 = " I am a true GEEK";
-        echo "<br>Length of String  ' I am a true GEEK ' (with white spaces) is " . strlen($var2);
+        echo "<h4>Conditional Statement</h4>";
+        $marks = 50;
+        if($marks >= 40){
+            echo "<br>Student has passed.";
+        }
+        else{
+            echo "<br>Student has failed.";
+        }
         
     ?>
 </body>
