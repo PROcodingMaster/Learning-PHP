@@ -1,3 +1,14 @@
+<?php 
+require 'common.php';
+if (isset($_SESSION['id'])){
+    echo "IS SET :" . $_SESSION['id'];
+}
+else{
+    echo "NO !!";
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +22,9 @@
     
 </head>
 <body>
+<?php
+    include 'header.php'
+?>
 <h1 style = "text-align : center">Store data into DB using forms</h1>
     <div class="container">
         <!-- "GET" method passes the values entered in the URL and has a limit of 
